@@ -11,7 +11,7 @@
 /* Defining Custome Variables */
 :root {
     /* Colors */
-    --primary-color: #3b141c;
+    --primary-color: #0e66e1;
     --secondary-color: #f3961c;
     --dark-color: #252525;
     --white-color: #fff;
@@ -92,7 +92,7 @@ nav .nav_logo a img {
 nav .nav_logo h2 {
     color: var(--white-color);
     font-weight: 600;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -152,18 +152,18 @@ label .close_btn {
 }
 
 .hero_container .text_section h3 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
     color: var(--white-color);
     margin-top: 8px;
 }
 
 .hero_container .text_section p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     color: var(--white-color);
     margin: 24px 0 40px;
-    max-width: 70%;
+    max-width: 90%;
 }
 
 .hero_container .hero_section_button {
@@ -259,9 +259,16 @@ label .close_btn {
 }
 
 .section_container .services_items img {
-    width: 100%;
+    width: 100%; /* Pastikan gambar memenuhi lebar kontainer */
+    height: auto; /* Mempertahankan proporsi asli gambar */
+    object-fit: cover; /* Memastikan gambar terlihat rapi dalam ruang yang tersedia */
+    border-radius: 10px; /* Memberikan sudut melengkung agar terlihat lebih menarik */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek estetis */
 }
-
+.section_container .services_items img:hover {
+    transform: translateY(-10px); /* Mengangkat gambar sedikit ke atas */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
 .section_container .services_items {
     width: calc(100% / 3 - 120px);
 }
